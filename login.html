@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizonte Blue | Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container nav-box">
+            <div class="logo-area">
+                <img src="img/png horizonte 2.png" alt="Horizonte Blue" class="logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="destinos.html">Destinos</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="form-container-central">
+            <div class="form-box" style="max-width:420px; width:100%;">
+                <h2>Entrar na sua conta</h2>
+                <form action="#" method="post" id="loginForm">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seu@exemplo.com" required>
+
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" placeholder="••••••••" required>
+
+                    <label style="display:flex;align-items:center;gap:10px;margin-top:6px;">
+                        <input type="checkbox" name="remember" id="remember"> Manter-me conectado
+                    </label>
+
+                    <button type="submit">Entrar</button>
+                    <p id="msgFeedback"></p>
+                </form>
+                <p style="margin-top:12px; font-size:0.95em;">Não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Horizonte Blue - Viagens & Turismo</p>
+    </footer>
+</body>
+</html>
