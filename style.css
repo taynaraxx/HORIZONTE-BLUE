@@ -1,0 +1,124 @@
+/*Base */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background-color: #f4f7f6; line-height: 1.6; }
+.container { max-width: 900px; margin: 0 auto; background: white; }
+
+/* Cabeçalho */
+header { background-color: #1a2a3a; color: white; padding: 20px; }
+.nav-box { display: flex; justify-content: space-between; align-items: center; background: none; }
+nav ul { list-style: none; display: flex; }
+nav ul li { margin-left: 20px; }
+nav ul li a { color: white; text-decoration: none; font-weight: bold; }
+
+.logo {
+    max-width: 160px;
+    height: auto;
+    display: block;
+}
+
+/* Banner */
+.hero-banner {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("img/paisagem\ rj.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; 
+}
+
+/* Tabelas e Listas */
+section { padding: 30px 20px; }
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+th { background-color: #1a2a3a; color: white; }
+
+/* Seção de Filtros */
+.filtros {
+    background: #ffffff;
+    padding: 30px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+.filtros h3 {
+    margin-bottom: 20px;
+    color: #1a2a3a;
+}
+
+/* Container */
+.filtros-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.filtro-item {
+    display: flex;
+    align-items: center;
+    background: #f0f2f5;
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.filtro-item:hover {
+    background: #e2e6ea;
+}
+
+.filtro-item input[type="checkbox"] {
+    margin-right: 10px;
+    accent-color: #e67e22; 
+    width: 16px;
+    height: 16px;
+}
+
+/* Vídeo */
+.video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; }
+.video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+/* Cards */
+.grid-destinos { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.card { border: 1px solid #eee; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+.card img { width: 100%; height: 200px; object-fit: cover; }
+.card-info { padding: 15px; }
+.card-info dt { font-weight: bold; color: #e67e22; margin-top: 10px; }
+.card-info dd { margin-left: 0; margin-bottom: 5px; font-size: 0.9em; }
+
+/* Formulário */
+.form-box { background: #f9f9f9; padding: 25px; border-radius: 5px; }
+label { display: block; margin: 10px 0 5px; font-weight: bold; }
+input, textarea { width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; }
+button { background: #27ae60; color: white; border: none; padding: 12px 20px; cursor: pointer; border-radius: 4px; font-weight: bold; }
+
+/* Rodapé */
+footer { background: #1a2a3a; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+
+/* Centralizar formulário de login na tela */
+.form-container-central {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+/* Melhorar inputs e feedback */
+input:focus {
+    border-color: #e67e22;
+    outline: none;
+}
+
+#msgFeedback, #msgErroLogin, #msgSucessoLogin {
+    font-size: 0.9em;
+    padding: 5px;
+    border-radius: 4px;
+}
+    
